@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Iunctim_AutoShipping>
+      <version>0.1.0</version>
+    </Iunctim_AutoShipping>
+  </modules>
+  <global>
+    <helpers>
+      <autoshipping>
+        <class>Iunctim_AutoShipping_Helper</class>
+      </autoshipping>
+    </helpers>
+    <models>
+      <autoshipping>
+        <class>Iunctim_AutoShipping_Model</class>
+      </autoshipping>
+    </models>
+  </global>
+  <frontend>
+    <events>
+      <checkout_cart_add_product_complete>
+        <observers>
+          <autoshipping_checkout_cart_add_product_complete>
+            <type>singleton</type>
+            <class>autoshipping/observer_checkout_cart</class>
+            <method>addProductComplete</method>
+          </autoshipping_checkout_cart_add_product_complete>
+        </observers>
+      </checkout_cart_add_product_complete>
+    </events>
+  </frontend>
+</config> 

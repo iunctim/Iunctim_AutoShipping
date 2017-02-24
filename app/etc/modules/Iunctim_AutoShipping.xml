@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Iunctim_AutoShipping>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.0</version>
+    </Iunctim_AutoShipping>
+  </modules>
+</config>
