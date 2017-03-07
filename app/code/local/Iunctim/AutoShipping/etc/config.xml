@@ -28,6 +28,24 @@
           </autoshipping_checkout_cart_add_product_complete>
         </observers>
       </checkout_cart_add_product_complete>
+      <sales_quote_remove_item>
+        <observers>
+          <autoshipping_checkout_cart_remove_product_complete>
+            <type>singleton</type>
+            <class>autoshipping/observer_checkout_cart</class>
+            <method>removeProductComplete</method>
+          </autoshipping_checkout_cart_remove_product_complete>
+        </observers>
+      </sales_quote_remove_item>
+      <checkout_cart_update_items_after>
+        <observers>
+          <autoshipping_checkout_cart_update_product_complete>
+            <type>singleton</type>
+            <class>autoshipping/observer_checkout_cart</class>
+            <method>updateProductComplete</method>
+          </autoshipping_checkout_cart_update_product_complete>
+        </observers>
+      </checkout_cart_update_items_after>
     </events>
   </frontend>
 </config> 
